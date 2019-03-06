@@ -4,7 +4,7 @@ import utils
 class ECurve:
 	"""
 	The curve is defined by the equation y^2 = x^3 + ax + b
-	p is the modulo. Shall be a prime number as big as possible
+	p is the modulo. Shall be a prime number as big as possible. Define the finite field associated to.
 	"""
 
 	def __init__(self, a, b, p):
@@ -124,11 +124,12 @@ class ECurvePoint:
 		point_list = []
 		point = self
 		scalar = 2
-		while not(point in point_list):
+		while not (point in point_list):
 			point_list.append(point)
-			point = scalar*self
+			point = scalar * self
 			scalar += 1
 		return point_list
+
 
 class ECurveInf(ECurvePoint):
 	"""The custom infinity point."""
@@ -143,19 +144,83 @@ class ECurveInf(ECurvePoint):
 		"""-0 = 0"""
 		return self
 
-3
 
-curve = ECurve(a=0, b=1, p=23)
+class Isogeny:
+	# An isogeny is defined by its kernel
+	def __init__(self, kernel=[]):
+		if (not isinstance(kernel, list)) or kernel == []:
+			raise ValueError("Kernel of isogeny can't be empty")
+		self.kernel = kernel
+
+		index = 0
+		point = self.kernel[index]
+		while (isinstance(point, ECurveInf)):
+			point = self.kernel[index]
+			index += 1
+			if index > len(self.kernel):
+				raise ValueError("Kernel can't be only ECurveInf")
+		self.curve = point.curve
+
+	@property
+	def length(self):
+		return len(self.kernel)
+
+	def __len__(self):
+		return len(self.kernel)
+
+	def velu(self, point):
+		if not isinstance(point, ECurvePoint):
+			raise TypeError("point shall be an ECurvePoint object and not " + format(type(point)))
+		if not point.curve == self.curve:
+			raise ValueError("Point and isogeny shall own the same elliptical curve")
+
+		new_x = 0
+		new_y = 0
+		new_a = self.curve.a
+		new_b = self.curve.b
+		sum_a = 0
+		sum_b = 0
+		for g in self.kernel:
+			point_tmp = point + g
+			if not isinstance(point_tmp, ECurveInf):
+				new_y += point_tmp.y
+				new_x += point_tmp.x
+			if not isinstance(g, ECurveInf):
+				new_x -= g.x
+				sum_a += 3 * g.x ** 2 + self.curve.a
+				sum_b += 5 * g.x ** 3 + 3 * self.curve.a * g.x + 2 * self.curve.b
+		new_a = self.curve.a - 5 * sum_a
+		new_b = self.curve.b - 7 * sum_b
+		new_curve = ECurve(new_a, new_b, self.curve.p)
+		if point in self.kernel:
+			return ECurveInf(curve=new_curve)
+		return ECurvePoint(x=new_x, y=new_y, curve=new_curve)
+
+	def __getitem__(self, point):
+		if not isinstance(point, ECurvePoint):
+			raise TypeError('index must be an ECurvePoint object and not' + format(point))
+		return self.velu(point)
+
+
+curve = ECurve(a=0, b=1, p=121)
 point = ECurvePoint(x=2, y=3, curve=curve)
 point2 = ECurvePoint(x=2, y=10, curve=curve)
 
 list_point = point.generate_subgroup()
-for point in list_point:
-	print(point)
-	if not isinstance(point, ECurveInf):
-		print(point.curve.has_point(point.x, point.y))
-	else:
-		print(True)
+#
+# for point in list_point:
+# 	print(point)
+# 	if not isinstance(point, ECurveInf):
+# 		print(point.curve.has_point(point.x, point.y))
+# 	else:
+# 		print(True)
+
+point = ECurvePoint(x=2, y=3, curve=curve)
+
+iso = Isogeny(kernel=list_point)
+a = iso[point]
+print(1000 * point)
+print(point + point + point)
 #
 # point3 = point + point
 # print(point3)

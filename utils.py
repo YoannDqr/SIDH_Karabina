@@ -1,5 +1,10 @@
+import finitefield as ff
 def is_int(value):
     assert isinstance(value, int)
+    return value
+
+def is_finite_field_elt(value):
+    assert isinstance(value, ff.FieldElement)
     return value
 
 def mod_inverse(a, n):
