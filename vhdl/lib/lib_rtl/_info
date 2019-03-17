@@ -1,0 +1,363 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl
+Pconst
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 w1552777736
+Z3 dC:/users/yoann/PycharmProjects/SiDH_Karabina/vhdl
+Z4 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/constant.vhd
+Z5 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/constant.vhd
+l0
+L10
+VkU`Sh0DN_<gm7B=34?TMD2
+!s100 8DF:bma2^D844_knJMR;^3
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1552780302
+!i10b 1
+Z8 !s108 1552780302.000000
+Z9 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/constant.vhd|
+Z10 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/constant.vhd|
+!i113 1
+Z11 o-work lib_rtl -O0
+Z12 tExplicit 1
+Bbody
+DPx4 work 5 const 0 22 kU`Sh0DN_<gm7B=34?TMD2
+R0
+R1
+l0
+L40
+VEUGcea?]TgWCN6?=BJ7@X2
+!s100 :3VmRAU[o>[l1?S1g9]eL3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nbody
+Eecc_add
+Z13 w1552780247
+Z14 DPx7 lib_rtl 5 const 0 22 kU`Sh0DN_<gm7B=34?TMD2
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R0
+R1
+R3
+Z18 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_add.vhd
+Z19 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_add.vhd
+l0
+L9
+V>:Gz`8ogWdhEnYEcgnXEC2
+!s100 0THA@65UzNF0YJM6Ge?BP0
+R6
+32
+Z20 !s110 1552780353
+!i10b 1
+Z21 !s108 1552780353.000000
+Z22 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_add.vhd|
+Z23 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_add.vhd|
+!i113 1
+R11
+R12
+Aecc_add_arch
+R14
+R15
+R16
+R17
+R0
+R1
+DEx4 work 7 ecc_add 0 22 >:Gz`8ogWdhEnYEcgnXEC2
+l81
+L25
+VkTK=OfQk8F:M4zD=aT0ek2
+!s100 3YfA81Gh6FIS^JRk:VoQB3
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R11
+R12
+Eecc_double
+R13
+R14
+R15
+R16
+R17
+R0
+R1
+R3
+Z24 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_double.vhd
+Z25 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_double.vhd
+l0
+L9
+VjkAoKK6N`RE^hNg0_e0o^3
+!s100 cX6;nYQIC9boYbRhmVR>>1
+R6
+32
+Z26 !s110 1552780357
+!i10b 1
+Z27 !s108 1552780357.000000
+Z28 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_double.vhd|
+Z29 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_double.vhd|
+!i113 1
+R11
+R12
+Aecc_double_arch
+R14
+R15
+R16
+R17
+R0
+R1
+DEx4 work 10 ecc_double 0 22 jkAoKK6N`RE^hNg0_e0o^3
+l79
+L21
+Vo`nb9G]ABZ^^XZGC]J>F@0
+!s100 CQljLP`f_6nEdYjAhRd7G1
+R6
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R11
+R12
+Eecc_scalar_mul
+R13
+R14
+R15
+R16
+R17
+R0
+R1
+R3
+Z30 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_scalar_mul.vhd
+Z31 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_scalar_mul.vhd
+l0
+L9
+Vm3mh6PlD`KJ1U;V1IgKz91
+!s100 CX^cK<BdQH<n_ak[=PM0U1
+R6
+32
+Z32 !s110 1552780363
+!i10b 1
+Z33 !s108 1552780363.000000
+Z34 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_scalar_mul.vhd|
+Z35 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/ecc/ecc_scalar_mul.vhd|
+!i113 1
+R11
+R12
+Aecc_scalar_mul_arch
+R14
+R15
+R16
+R17
+R0
+R1
+DEx4 work 14 ecc_scalar_mul 0 22 m3mh6PlD`KJ1U;V1IgKz91
+l63
+L22
+Vad7Re:^bDKbTU9G@UBH]C2
+!s100 @naY>FIUfh68IC]`l?<1l3
+R6
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R11
+R12
+Efp2_add
+Z36 w1552780254
+R14
+R15
+R16
+R17
+R0
+R1
+R3
+Z37 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_add.vhd
+Z38 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_add.vhd
+l0
+L9
+VgB3:dX6d=C?j8abbMA[691
+!s100 ]GFek0mVBPR7TK<I2n7gj1
+R6
+32
+Z39 !s110 1552780318
+!i10b 1
+Z40 !s108 1552780318.000000
+Z41 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_add.vhd|
+Z42 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_add.vhd|
+!i113 1
+R11
+R12
+Afp2_add_arch
+R14
+R15
+R16
+R17
+R0
+R1
+Z43 DEx4 work 7 fp2_add 0 22 gB3:dX6d=C?j8abbMA[691
+l26
+L18
+VSVQDba=OeeC6E=;9KJH9a2
+!s100 Y_iR0MVMFGlEPNBQa8=8>0
+R6
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R11
+R12
+Efp2_mul
+Z44 w1552780257
+R14
+R15
+R16
+R17
+R0
+R1
+R3
+Z45 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul.vhd
+Z46 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul.vhd
+l0
+L9
+V9CMZCFQcnKmi7Mf3Z;3Na1
+!s100 b^2<bENOLkKg<I3dM54m03
+R6
+32
+Z47 !s110 1552780335
+!i10b 1
+Z48 !s108 1552780335.000000
+Z49 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul.vhd|
+Z50 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul.vhd|
+!i113 1
+R11
+R12
+Afp2_mul_arch
+R14
+R15
+R16
+R17
+R0
+R1
+Z51 DEx4 work 7 fp2_mul 0 22 9CMZCFQcnKmi7Mf3Z;3Na1
+l50
+L17
+V`IVz?QFIKFJX2R_kz=J[Z2
+!s100 iPRTTdMlFTW]BO;VL[0cz2
+R6
+32
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Cfp2_mul_conf
+eFp2_mul
+aFp2_mul_arch
+Z52 DEx4 work 13 fp2_mul_redux 0 22 azH@SJNb`l?lcz8Qob5Dd2
+R43
+DAx4 work 7 fp2_mul 12 fp2_mul_arch 22 `IVz?QFIKFJX2R_kz=J[Z2
+R14
+R15
+R16
+R17
+R0
+R1
+R51
+R44
+R3
+R45
+R46
+l0
+L92
+Va;SH=lSVU=7MLITzE_TKU3
+!s100 MmX`T:ch>?Y_^NP>nz3?P0
+R6
+32
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Efp2_mul_redux
+R36
+R14
+R15
+R16
+R17
+R0
+R1
+R3
+Z53 8C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul_redux.vhd
+Z54 FC:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul_redux.vhd
+l0
+L9
+VazH@SJNb`l?lcz8Qob5Dd2
+!s100 <^ANb:UTMIXYE5c:a]>dX1
+R6
+32
+Z55 !s110 1552780328
+!i10b 1
+Z56 !s108 1552780328.000000
+Z57 !s90 -reportprogress|300|-work|lib_rtl|-O0|C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul_redux.vhd|
+Z58 !s107 C:/Users/yoann/PycharmProjects/SIDH_Karabina/vhdl/src/rtl/fp2/fp2_mul_redux.vhd|
+!i113 1
+R11
+R12
+Afp2_mul_redux_arch
+R14
+R15
+R16
+R17
+R0
+R1
+R52
+l21
+L16
+VV>DOGT[f2VbSTC26hO76m1
+!s100 k1Md3]AbIJCQnga_z4n0E3
+R6
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R11
+R12
